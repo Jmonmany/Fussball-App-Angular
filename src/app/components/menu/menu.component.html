@@ -1,12 +1,24 @@
-<div>
-  <img
-    src="{menu}"
-    alt="menu"
-    className="menu__icon"
-    onClick="{handleClick}"
-    data-testid="menu-icon"
-  />
-  <ul>
-    <li *ngFor=""></li>
-  </ul>
+<div
+  class="dropdown"
+  (mouseenter)="showDropdown = true"
+  (mouseleave)="showDropdown = false"
+>
+  <button class="dropbtn">Competitions</button>
+  <ng-container>
+    <div *ngIf="showDropdown; else errorTpl">Fetching competitions...</div>
+    <ng-template #errorTpl>
+      <p *ngIf="error; else competitionsListTpl">An error occured</p>
+    </ng-template>
+    <ng-template #competitionsListTpl>
+      <!-- <ul *ngIf="competitions.length > 0">
+      <li *ngFor="let user of competitions">
+        <img [src]="user.picture.thumbnail" alt="user">
+        <p>{{user.name.first}} {{user.name.last}}</p>
+      </li>
+    </ul> -->
+      <div class="dropdown-content" *ngIf="showDropdown">
+        <a href="#" *ngFor="let competition of competitions">Liga</a>
+      </div>
+    </ng-template>
+  </ng-container>
 </div>

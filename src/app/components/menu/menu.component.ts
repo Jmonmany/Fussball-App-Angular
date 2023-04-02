@@ -16,11 +16,11 @@ export class MenuComponent implements OnInit {
     this.loading = false;
   }
   getMatches() {
-    return this.apiService
-      .getCompetitions()
-      .subscribe((response) => console.log(response));
+    // return this.apiService
+    //   .getCompetitions()
+    //   .subscribe((response) => console.log(response));
   }
   ngOnInit(): void {
-    this.getMatches();
+    // this.competitions = this.getMatches().competitions;
   }
 }

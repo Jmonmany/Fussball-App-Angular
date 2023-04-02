@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { CompetitionsComponent } from './components/competitions/competitions.component';
+import { CompetitionsComponent } from './home/competitions/competitions.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, CompetitionsComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

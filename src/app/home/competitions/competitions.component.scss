@@ -1,0 +1,76 @@
+:host {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Football style */
+.competition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.competition:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.competition h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.competition p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.competition a {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.competition a:hover {
+  background-color: #3e8e41;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .competition {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .competition h2 {
+    margin-right: 2rem;
+  }
+
+  .competition p {
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,12 @@
+<div *ngIf="!competitions || competitions.length === 0">
+  No league selected.
+</div>
+
+<div *ngIf="competitions && competitions.length > 0">
+  <h1>Football Competitions</h1>
+  <div *ngFor="let competition of competitions" class="competition">
+    <!-- <h2>{{ competition.name }}</h2> -->
+    <!-- <p>{{ competition.description }}</p> -->
+    <a href="#">View Details</a>
+  </div>
+</div>

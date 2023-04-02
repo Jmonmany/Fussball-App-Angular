@@ -14,10 +14,6 @@ export class ApiService {
   };
   constructor(private http: HttpClient) {}
   getCompetitions() {
-    // this.competition = this.http.get<Competition>(
-    //   'https://api.football-data.org/v4/competitions/',
-    //   this.httpOptions
-    // );
     return this.http.get<Competition>(
       'https://api.football-data.org/v4/competitions/',
       this.httpOptions
